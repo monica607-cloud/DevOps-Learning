@@ -37,6 +37,19 @@ Options:
 -n : Rename Group
 -o : Allow duplicate GID
 
+Adding a User with Custom Settings
+useradd <option> <username>
+Options:
+-u : Specify User ID
+-g : Specify Primary Group
+-c : Add a Comment
+-d : Set Home Directory
+-s : Define Login Shell
+-G : Assign Secondary Group
+-r : Create a System User
+-e : Set Account Expiry Date
+-o : Allow Duplicate UID
+
 
 
 /etc/passwd - Stores user profile-related information.
