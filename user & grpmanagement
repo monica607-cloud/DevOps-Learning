@@ -9,4 +9,10 @@ Q 3. How to create group
 Q 4. How to add users in group
   A. To add users in group we use usermod command Eg.(sudo usermod -aG groupname username)
 
+
+
+/etc/passwd - Stores user profile-related information.
+/etc/shadow - Stores user password policies.
+/etc/group - Stores group-related information.
+/etc/gshadow - Stores group passwords and member lists.
  
