@@ -9,6 +9,7 @@ Q 3. How to create group
 Q 4. How to add users in group
   A. To add users in group we use usermod command Eg.(sudo usermod -aG groupname username)
 
+To switch user we use su command Eg (su username)
 
 
 /etc/passwd - Stores user profile-related information.
