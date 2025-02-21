@@ -64,6 +64,15 @@ Options:
 -U : Unlock User Account
 -m : Move Home Directory
 
+Removing a User
+userdel <username>
+
+Managing Group Passwords
+gpasswd <option> <groupname>
+Options:
+-a : Add a user to the group
+-M : Define a list of group members
+-A : Assign a user as group admin
 
 
 /etc/passwd - Stores user profile-related information.
