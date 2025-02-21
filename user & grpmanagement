@@ -22,6 +22,22 @@ Options:
 -E : Set account expiry date
 -d : Force immediate password change
 
+Adding a Group with Custom Settings
+
+groupadd <option> <groupname>
+Options:
+-g : Specify Group ID (GID)
+-o : Allow non-unique GID
+-f : Force group creation
+
+Modifying an Existing Group
+groupmod <option> <groupname>
+Options:
+-g : Change Group ID
+-n : Rename Group
+-o : Allow duplicate GID
+
+
 
 /etc/passwd - Stores user profile-related information.
 /etc/shadow - Stores user password policies.
