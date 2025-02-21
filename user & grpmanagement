@@ -11,6 +11,17 @@ Q 4. How to add users in group
 
 To switch user we use su command Eg (su username)
 
+View or Change Password Policy
+chage <option> <username>
+Options:
+-l : List password policies
+-m : Set minimum days between password changes
+-M : Set maximum days before password change
+-W : Set days before expiry warning
+-I : Set inactivity period before deactivation
+-E : Set account expiry date
+-d : Force immediate password change
+
 
 /etc/passwd - Stores user profile-related information.
 /etc/shadow - Stores user password policies.
