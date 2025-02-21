@@ -50,6 +50,20 @@ Options:
 -e : Set Account Expiry Date
 -o : Allow Duplicate UID
 
+Modifying an Existing User
+usermod <option> <username>
+Options:
+-u : Change User ID
+-g : Change Primary Group
+-c : Modify Comment
+-d : Change Home Directory
+-s : Change Login Shell
+-G : Modify Secondary Groups
+-l : Change Login Name
+-L : Lock User Account
+-U : Unlock User Account
+-m : Move Home Directory
+
 
 
 /etc/passwd - Stores user profile-related information.
