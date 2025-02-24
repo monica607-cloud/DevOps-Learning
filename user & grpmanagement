@@ -12,7 +12,7 @@ Q 4. How to add users in group
 To switch user we use su command Eg (su username)
 
 View or Change Password Policy
-chage <option> <username>
+chage <option> <parameter> <username>
 Options:
 -l : List password policies
 -m : Set minimum days between password changes
