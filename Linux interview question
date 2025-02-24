@@ -8,10 +8,15 @@ Ans -: There are three types of users in Linux
 
 2. How do you create a new user in Linux?
 Ans -: To add new user we can use  ( useradd or adduser)
+        adduser username
 
 3. How do you add a user to a group? 
-Ans -: In order to add user to group we can use (usermod -a)command 
-4. How do you list all users and groups in a Linux system?  
+Ans -: In order to add user to group we can use (usermod -aG) and (gpasswd -a)command 
+      Ex:- gpasswd -a groupname username
+
+4. How do you list all users and groups in a Linux system? 
+ 
+
 5. How do you switch to another user account in Linux?  
 6. How do you lock and unlock a user account?  
 7. What is the difference between primary and secondary groups?  
