@@ -38,7 +38,7 @@ Options:
 -o : Allow duplicate GID
 
 Adding a User with Custom Settings
-useradd <option> <username>
+useradd <option><parameter> <username>
 Options:
 -u : Specify User ID
 -g : Specify Primary Group
