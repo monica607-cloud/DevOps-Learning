@@ -15,14 +15,29 @@ Ans -: In order to add user to group we can use (usermod -aG) and (gpasswd -a)co
       Ex:- gpasswd -a groupname username
 
 4. How do you list all users and groups in a Linux system? 
+Ans -: In order to list users on your system  we can use cat command on the /etc/passwd file.
+     in order to list groups on your sysytem  we can use cat command on the /etc/group file.
  
+5. How do you switch to another user account in Linux?
+   Ans -: To switch to another user account we can use su command Ex :(su username)
 
-5. How do you switch to another user account in Linux?  
-6. How do you lock and unlock a user account?  
-7. What is the difference between primary and secondary groups?  
-8. How do you create a new group in Linux?  
-9. How do you delete a user and their home directory?  
-10. What is the purpose of the `/etc/passwd`, `/etc/shadow`, and `/etc/group` files?  
+6. How do you lock and unlock a user account? 
+Ans :- To lock user account we can use usermod -L command Ex: (usermod -L username)
+      To unlock user accound we can use usermod -U command Ex:(usermod -U username)
+
+7. What is the difference between primary and secondary groups?
+Ans :- Primary group is group that is automatically genrate while creating a user with unique user id.
+      Scondary group is group that seprately creat by using the command 
+
+8. How do you create a new group in Linux? 
+Ans :-To creat new group use groupadd command Ex:(groupadd groupname)
+
+9. How do you delete a user and their home directory? 
+Ans :- To delete or remove user fro home directory we can use userdel command Ex:(userdel username)
+
+10. What is the purpose of the `/etc/passwd`, `/etc/shadow`, and `/etc/group` files? 
+ Ans :- /etc/passwd - 
+
 11. How do you change a user's password policy (e.g., expiration, minimum days)?  
 12. How do you find users with no password set?  
 13. How do you change a user's shell?  
