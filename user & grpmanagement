@@ -74,6 +74,8 @@ Options:
 -M : Define a list of group members
 -A : Assign a user as group admin
 
+chage -- help  
+
 
 /etc/passwd - Stores user profile-related information.
 /etc/shadow - Stores user password policies.
