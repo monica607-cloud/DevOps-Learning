@@ -10,7 +10,7 @@ Ans -: There are three types of users in Linux
 Ans -: To add new user we can use  ( useradd or adduser)
 
 3. How do you add a user to a group? 
-Ans -: 
+Ans -: In order to add user to group we can use (usermod -a)command 
 4. How do you list all users and groups in a Linux system?  
 5. How do you switch to another user account in Linux?  
 6. How do you lock and unlock a user account?  
