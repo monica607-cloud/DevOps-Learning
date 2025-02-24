@@ -44,10 +44,20 @@ Ans :- To delete or remove user fro home directory we can use userdel command Ex
 11. How do you change a user's password policy (e.g., expiration, minimum days)? 
   Ans :- To change user's password policy of expiration in minium days we can use chage -m command (chage -m username)
 
-12. How do you find users with no password set?  
-13. How do you change a user's shell?  
+12. How do you find users with no password set? 
+Ans :- When users is exist in /etc/shadow file it means user is withoud password
+
+13. How do you change a user's shell? 
+ Ans :- There are three ways to change shell 
+   1. usermod - usermod -s username 
+   chsh --shell shell name username
+
 14. What is the difference between `sudo` and `su`?  
+Ans :- Sudo command allowes user to run the command as another user (as root user)
+and su command stands for switch user 
+
 15. How do you add an existing user to a new group and remove them from a group?  
+
 16. How do you change the ownership of a file or directory?  
 17. How do you set file permissions in Linux?  
 18. How do you delete a group?  
