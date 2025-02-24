@@ -7,7 +7,7 @@ Q 2.How to set initial password to  user
 Q 3. How to create group
  A. To create group we use gruopadd command Eg.(sudo groupadd groupname)
 Q 4. How to add users in group
-  A. To add users in group we use usermod command Eg.(sudo usermod -aG groupname username)
+  A. To add users in group we use usermod command Eg.(sudo usermod -a groupname username)
 
 To switch user we use su command Eg (su username)
 
