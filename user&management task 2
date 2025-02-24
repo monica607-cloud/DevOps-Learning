@@ -1,0 +1,22 @@
+Linux User Management Tasks
+
+Create a new user.
+Set a password for a user.
+Modify a user’s home directory and default shell.
+Delete a user along with their home directory.
+Create a new group.
+Add a user to an existing group.
+Remove a user from a group.
+Delete a group from the system.
+Change the ownership of a file or directory.
+Modify file permissions for a user or group.
+Grant a user sudo (administrative) privileges.
+List all users in the system.
+Check a user's groups and permissions.
+Lock and unlock a user account.
+Expire a user’s password to force a reset on next login.
+Set an account expiration date for a user.
+Disable a user account without deleting it.
+View system login history and failed login attempts.
+Create a new user with a specific UID and GID.
+Assign a user to multiple groups.
