@@ -31,7 +31,7 @@ Options:
 -f : Force group creation
 
 Modifying an Existing Group
-groupmod <option> <groupname>
+groupmod <option><parameter> <groupname>
 Options:
 -g : Change Group ID
 -n : Rename Group
@@ -62,7 +62,7 @@ Options:
 -l : Change Login Name
 -L : Lock User Account
 -U : Unlock User Account
--m : Modified Directory
+-m : Modify Directory
 
 Removing a User
 userdel <username>
