@@ -51,7 +51,7 @@ Options:
 -o : Allow Duplicate UID
 
 Modifying an Existing User
-usermod <option> <username>
+usermod <option> <parameter> <username>
 Options:
 -u : Change User ID
 -g : Change Primary Group
@@ -62,7 +62,7 @@ Options:
 -l : Change Login Name
 -L : Lock User Account
 -U : Unlock User Account
--m : Move Home Directory
+-m : Modified Directory
 
 Removing a User
 userdel <username>
