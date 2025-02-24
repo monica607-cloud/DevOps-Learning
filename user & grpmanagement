@@ -1,7 +1,7 @@
 Exercise 1.
 Q 1. How to create user accounts 
 create user account for three employee sagar,sanket,shubham
-  A. Using useradd command we can add user Eg. (sudo useradd username) 
+  A. Using useradd or adduser command we can add user Eg. (sudo useradd username) 
 Q 2.How to set initial password to  user
   A. Using passwd command we can set password to each user Eg (sudo passwd username)
 Q 3. How to create group
@@ -80,3 +80,4 @@ Options:
 /etc/group - Stores group-related information.
 /etc/gshadow - Stores group passwords and member lists.
  
+su - username - To switch user to existing user
