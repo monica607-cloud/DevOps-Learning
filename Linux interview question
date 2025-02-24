@@ -36,9 +36,14 @@ Ans :-To creat new group use groupadd command Ex:(groupadd groupname)
 Ans :- To delete or remove user fro home directory we can use userdel command Ex:(userdel username)
 
 10. What is the purpose of the `/etc/passwd`, `/etc/shadow`, and `/etc/group` files? 
- Ans :- /etc/passwd - 
+ Ans :- /etc/passwd - This file is most important file linux operating system.
+ This file store essential information about user in system.
+   /etc/shadow :- This file store actual password in encrypted format with addition properties with related to user password
+   /etc/group :- This is text file which defines which user belongs under linux operating sysytem.
 
-11. How do you change a user's password policy (e.g., expiration, minimum days)?  
+11. How do you change a user's password policy (e.g., expiration, minimum days)? 
+  Ans :- To change user's password policy of expiration in minium days we can use chage -m command (chage -m username)
+
 12. How do you find users with no password set?  
 13. How do you change a user's shell?  
 14. What is the difference between `sudo` and `su`?  
