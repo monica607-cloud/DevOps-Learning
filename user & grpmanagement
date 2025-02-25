@@ -83,4 +83,5 @@ chage -- help
 /etc/gshadow - Stores group passwords and member lists.
  
 su - username - To switch user to existing user
+su -username takes u to present working directory
 chage - View and change password
