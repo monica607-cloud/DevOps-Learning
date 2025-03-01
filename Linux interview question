@@ -59,7 +59,8 @@ and su command stands for switch user
 15. How do you add an existing user to a new group and remove them from a group?  
 gpasswd -d remove user from the group
 
-16. How do you change the ownership of a file or directory?  
+16. How do you change the ownership of a file or directory?
+ chown username file name 
 17. How do you set file permissions in Linux?  
 18. How do you delete a group?  
 19. How do you create a new user and assign them to a group in a single command?  
