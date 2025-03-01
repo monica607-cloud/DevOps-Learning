@@ -2,12 +2,42 @@ Linux-Interview-Questions
 
 General Concepts :
 
-What is Linux?
-What are the differences between Linux and Windows and Unix?
+1 .What is Linux?
+Ans :- Linux is operating system which providers environment to run application.
+
+2 .What are the differences between Linux and Windows and Unix?
+Linux -: The source code of linux is freely available to its user 
+          It is portable and can be execute to different harddrive
+          Linux primarlily used for GUI and CUI (Graphycal User Interface) (command line interface)
+Unix :-  The source code of unix is not available for general users
+          unix is not portable
+          Unix is only used for CUI (Command line inerface)
+Windows : - Windows is a properitaty operating system developed by microsoft 
+            Its source code is not accessible for public
+            User must purchase the license to use it 
+
 What is the Linux kernel ?
+Ans :- The kernal is the program that actually communicate with hardware combining shell and kernal form operating sysytem
+
 What are the advantages of using Linux ?
+Ans :- Linux is open source its source code freely available to view modify and distribute.
+       Linux is known for stability and reability 
+        Linux is more secure as compare to unix 
+        it is freely available to use 
+        
 What are the different types of Linux distributions ?
+There are multiple types of distributions for eg.
+  Ubantu 
+  Linux Mint
+  Debian
+  Fedora
+  Red Hat enterprices
+  Slackware linux etc.
+
+
 Explain the Linux architecture ?
+Ans :- There are 4 stages in linux architecture
+  1.Application layer :-
 What is shell ?
 
 #Basic Commands :
