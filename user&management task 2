@@ -15,6 +15,8 @@ List all users in the system.
 Check a user's groups and permissions.
 Lock and unlock a user account.
 Expire a user’s password to force a reset on next login.
+chage -M to set Expire users password
+
 Set an account expiration date for a user.
 Disable a user account without deleting it.
 View system login history and failed login attempts.
