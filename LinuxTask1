@@ -1,0 +1,7 @@
+Find all files larger than 10 MB in the /home directory.
+Ans :- find / -size +10M  
+
+Create a directory structure like projects/{project1,project2}/{src,bin,docs} in a single command.
+Copy all .log files from one directory to another while preserving their timestamps.
+Create a symbolic link named shortcut pointing to a file of your choice.
+Compress the projects directory into a .tar.gz archive.
