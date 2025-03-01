@@ -57,6 +57,7 @@ Ans :- Sudo command allowes user to run the command as another user (as root use
 and su command stands for switch user 
 
 15. How do you add an existing user to a new group and remove them from a group?  
+gpasswd -d remove user from the group
 
 16. How do you change the ownership of a file or directory?  
 17. How do you set file permissions in Linux?  
