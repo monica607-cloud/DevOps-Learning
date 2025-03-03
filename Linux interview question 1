@@ -60,7 +60,8 @@ How do you copy files and directories?
 ANS:- To copy file we use cp command (cp source destination ) to copy directiory we use (cp -r source destination) 
 
 What is the difference between cp and mv commands?
-ANS :-cp command used to copy file from source to destination and mv command use to move file from one source to destination
+ANS :-cp command used to copy file from source to destination and mv command use to move file from one source to destination 
+also used to rename file 
       
 How do you delete files and directories in Linux?
 rm filename  to delete file and folder 
@@ -71,21 +72,47 @@ rm * to delete all file
 rm -r to delete all recurcive file and folder or non empty file or folder
 
 What is the command to rename the file?
+mv command is used to rename file (mv file or foldername and change name  )
+
 
 Which commands do you used to read the file?
+to read file we can use cat command (cat file name)
+
 What is the difference between head and tail command?
+ANS:- The head command is used to display first part of file it default display top 10 lines(head filename)
+tail command is used to display last 10 line of the file 
+
 How will you list the hidden files?
+ANS:-To list hidden file ls -a source
+
 What is the purpose of the cat command?
+cat command is used to display content of the file. 
+
 What is command to check kernel name and version?
+ANS :- uname -r 
+
 What is the use of tree command?
+ANS:-Tree command is used to visualize directory structure and orgnised the file and directory 
+
 How will you check current working directory?
+Using pws command we can check present working directory.
+
 What does the alias command do?
+ANS:- alias is user define shortcut for longer command 
 
 #Linux File System Hierarchy :
 
 What is the purpose of the root (/) directory in Linux?
+ all the files and directories are located under the root directory 
+
 What is the difference between /bin and /sbin?
+ANS:- /bin directory contains binaries that are essential to the operating system.
+/sbin directory stores the binaries required by the operating system for system management. 
+
 What is the purpose of the /etc directory?
+directory is used to store system-wide configuration files. These files are essential for 
+configuring the behavior of the operating system and installed applications
+
 What type of files are stored in the /home directory?
 What is the use of the /root directory?
 What is the difference between a relative path and an absolute path in the Linux file system?
