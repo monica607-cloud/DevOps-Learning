@@ -54,6 +54,8 @@ What is the purpose of the ls command?
 ANS :- ls command in linux is used to list file and directories.
 
 How do you create a new directory and file in Linux?
+ANS :- using mkdir command you can create directory and using touch command we cand create file 
+
 How do you copy files and directories?
 What is the difference between cp and mv commands?
 How do you delete files and directories in Linux?
