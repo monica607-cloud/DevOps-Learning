@@ -57,9 +57,21 @@ How do you create a new directory and file in Linux?
 ANS :- using mkdir command you can create directory and using touch command we cand create file 
 
 How do you copy files and directories?
+ANS:- To copy file we use cp command (cp source destination ) to copy directiory we use (cp -r source destination) 
+
 What is the difference between cp and mv commands?
+ANS :-cp command used to copy file from source to destination and mv command use to move file from one source to destination
+      
 How do you delete files and directories in Linux?
+rm filename  to delete file and folder 
+rmdir to delete directory 
+rm -v to view and delete file 
+rm -vf to delete forcefully as well as view 
+rm * to delete all file 
+rm -r to delete all recurcive file and folder or non empty file or folder
+
 What is the command to rename the file?
+
 Which commands do you used to read the file?
 What is the difference between head and tail command?
 How will you list the hidden files?
