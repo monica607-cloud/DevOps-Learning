@@ -37,13 +37,22 @@ There are multiple types of distributions for eg.
 
 Explain the Linux architecture ?
 Ans :- There are 4 stages in linux architecture
-  1.Application layer :-
+  1.Application layer :-User intract with system through varies application eg. ofc,games this application run outer layes of structure
+  2.Shell provides environment to run any application it provides interface to the user to ineract with hardware
+  3.Kernal is program which actually communicate with hardware combining shell and kernal form operating system
+  4.Hardware is component such as motherboard CPU,Harddisk etc are comes under this layer
+
 What is shell ?
+ANS :- Shell provides environment to run any application it provides interface to user to interact with hardware 
 
 #Basic Commands :
 
 What command is used to display the current date and time?
+ANs :- (date) command use to display current date and time (date -u )command used to display date in UTC form 
+
 What is the purpose of the ls command?
+ANS :- ls command in linux is used to list file and directories.
+
 How do you create a new directory and file in Linux?
 How do you copy files and directories?
 What is the difference between cp and mv commands?
