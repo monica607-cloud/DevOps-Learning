@@ -128,18 +128,54 @@ It provides a complete address that points directly to a file or directory, rega
 Starts with a slash (/).
 
 How can you check the disk usage of a specific directory?
-What is the default mount point for external devices in Linux?
+to check disk usage we can use du -h command 
 
+What is the default mount point for external devices in Linux?
+Mounting is the process of attaching a storage device or partition to a directory or mount point so that its contents 
+can be accessed and managed by computer system users.
 
 #Vim editor :
 
 What is Vim editor?
+Vim, short for Vi IMproved, is a highly configurable text editor built to enable efficient text editing.
+It’s an enhanced version of the Vi editor, which was developed back in the 1970s. Vim is widely used by programmers,
+system administrators, and anyone who spends a significant amount of time working in the terminal
+
 What are the different modes in Vim?
+There are six modes in vim editior 
+1.Normal mode :- In Vim, Normal mode is your starting point for navigating and controlling text.
+2.Insert mode:-nsert Mode in Vim is where the magic happens – it's the space where you actively insert and manipulate your text.
+3.Ex mode:-an integral part of Vim, provides a powerful platform for executing advanced commands with a focus on line-oriented operations.
+4.Visual mode :- Visual mode in Vim empowers users to precisely select and manipulate text,
+offering flexibility in the types of selections made
+5.Command line mode :- Command-Line mode is for executing complex commands and performing various tasks.
+6.Replace mode :- Replace mode in Vim provides a focused environment for substituting existing text with new content,
+ensuring a seamless and controlled editing process.
+
 How do you switch between insert mode and command mode?
+ANS :- Insert mode :- command for insert is i and if you want to switch to command mode we can use esc button.
+
 By default which mode get open when you use the vim editor?
+By default normal mode get open when you use vim editor.
+
 How do you copy and paste text in Vim?
+Vim has its own terminology for copying, cutting, and pasting. Copy is called yank (y), 
+cut is called delete (d), and paste is called put (p).
+
 How do you delete a line in Vim?
+To delete a line in Vim, you can use the dd command:
+Press the Esc key to go to normal mode.
+Place the cursor on the line you want to delete.
+Type dd and hit Enter to remove the line.
+Pressing dd multiple times will delete multiple lines.
+
 How do you undo and redo changes in Vim?
+To undo changes in Vim, you need to:
+Go to command mode by pressing Esc key.
+Press the u key to undo the changes.
+To undo multiple changes, prepend u with a number, like 5u to undo the five recent changes.
+To redo the last undone change, simply press Ctrl + r.
+
 How do you exit Vim without saving changes?
 How do you exit Vim with saving changes?
 How do you search for a specific word or pattern in a file?
