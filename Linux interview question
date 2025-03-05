@@ -60,8 +60,13 @@ and su command stands for switch user
 gpasswd -d remove user from the group
 
 16. How do you change the ownership of a file or directory?
- chown username file name 
+ chown -c  username file name
+
 17. How do you set file permissions in Linux?  
+Setting file permissions in Linux is crucial for ensuring that only authorized users can access, modify, or execute files
+
 18. How do you delete a group?  
+ANS:- To delete(remove) a given group from the system, invoke the groupdel command followed by the group name.
+
 19. How do you create a new user and assign them to a group in a single command?  
 20. What is the purpose of the `/etc/gshadow` file?  
