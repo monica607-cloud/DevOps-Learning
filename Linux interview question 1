@@ -117,7 +117,16 @@ What type of files are stored in the /home directory?
 ANS:- The home directory contains the user data and user-specific configuration files
 
 What is the use of the /root directory?
+ANS :- The root directory is the starting point for all user directories. In simple words, 
+all the files and directories are located under the root directory in Linux. Moreover, 
+the root directory is the only directory that is guaranteed to exist on the system, and all 
+other directories are created as subdirectories of the root directory.
+
 What is the difference between a relative path and an absolute path in the Linux file system?
+An absolute path is a full path that specifies the location of a file or directory from the root directory (‘/’). 
+It provides a complete address that points directly to a file or directory, regardless of the current working directory.
+Starts with a slash (/).
+
 How can you check the disk usage of a specific directory?
 What is the default mount point for external devices in Linux?
 
