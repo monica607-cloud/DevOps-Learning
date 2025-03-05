@@ -69,4 +69,9 @@ Setting file permissions in Linux is crucial for ensuring that only authorized u
 ANS:- To delete(remove) a given group from the system, invoke the groupdel command followed by the group name.
 
 19. How do you create a new user and assign them to a group in a single command?  
+ANS:- to create new user and to assign in a group we can use adduser -g groupname username 
+
 20. What is the purpose of the `/etc/gshadow` file?  
+The /etc/gshadow file saves group passwords. Each line in this file stores one group entry. 
+Each line contains the following four fields separated by colons. This field stores the group name. 
+This field stores the group password in an encrypted format. This field saves the group admin name and member
