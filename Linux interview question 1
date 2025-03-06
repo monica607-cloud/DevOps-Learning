@@ -163,6 +163,7 @@ Vim has its own terminology for copying, cutting, and pasting. Copy is called ya
 cut is called delete (d), and paste is called put (p).
 
 How do you delete a line in Vim?
+
 To delete a line in Vim, you can use the dd command:
 Press the Esc key to go to normal mode.
 Place the cursor on the line you want to delete.
@@ -177,9 +178,36 @@ To undo multiple changes, prepend u with a number, like 5u to undo the five rece
 To redo the last undone change, simply press Ctrl + r.
 
 How do you exit Vim without saving changes?
+To exit Vim without saving changes, you need to switch to command mode by pressing the Esc key. 
+Then, press : (colon) to open the prompt bar in the bottom left corner of the window.
+Type q! after the colon and hit Enter to exit without saving the changes
+
 How do you exit Vim with saving changes?
+nd then you can use the following options:
+:w – Save the changes but don’t exit
+:wq – Save and quit
+:q – Just Quit (if you have unsaved changes, you’ll see this warning: E37: No write since last change (add ! to override))
+:q! – Force quit (it will discard any unsaved changes)
+
 How do you search for a specific word or pattern in a file?
+In the most basic form, you use grep to match literal patterns within a text file.
+This means that if you pass grep a word to search for, it will print out every line in the file containing that word.
+Execute the following command to use grep to search for every line that contains the word GNU:
+
 How do you perform a search and replace in Vim?
+First, you need to open a document in Vim and then, enter command mode. After this, 
+vim will switch to search mode and whatever you will type after '/', vim will search its first occurrence in the document.
+/Search word.
+To replace a searched word in vim, we have the :substitute command or :s in short. The syntax is as follows:
+%s/search_word/replace_word/g
+%s - The first part after ':' decides the scale of replace. It can either be for the entire document (%), 
+specific line numbers (e.g 3), or a range of lines (e.g. 3,7). The 's' is for the substitute command.
+search_word - The next field followed by the '/' is the word we want to replace, 
+you can use the default searching, regex searching or exact word searching here.
+replace_word - Next, it is takes the world we want to replace the searched word.
+g - These are extra options; here 'g' means global which will replace every occurence in 
+all specified lines instead of the first occurence. Also, there is an option 'c' which asks for confirmation at every search.
+
 How do you move to the beginning or end of a line in Vim?
 How do you enable line numbers in Vim?
 What is the use of visual mode and how will you open it?
