@@ -209,15 +209,37 @@ g - These are extra options; here 'g' means global which will replace every occu
 all specified lines instead of the first occurence. Also, there is an option 'c' which asks for confirmation at every search.
 
 How do you move to the beginning or end of a line in Vim?
+Press the Esc key to be in the normal mode.
+Press the 0 key to move the cursor to the beginning of the line (column 0)
+Press $ key to move the cursor to the end of the line (last column).
+
 How do you enable line numbers in Vim?
+Absolute Line Numbering in Vim/Vi
+Relative Line Numbering
+Hybrid Line Numbering
+Permanently Enable Vim Line Numbers
+
 What is the use of visual mode and how will you open it?
+The Visual mode allows you to visually highlight (select) specific text areas and run commands on them.
+To enter the Visual mode from the Normal mode, you can press on v—which will mark the beginning of the selection—and then
+use the arrow keys to move the cursor to the desired end of the selection.
 
 #User Management :
 
 How do you create a new user in Linux?
+useradd or adduser is a command line utility that can be used to create new users in Linux and Unix systems.
+
 What is the purpose of the /etc/passwd file?
+The /etc/passwd file is the most important file in Linux operating system. 
+This file stores essential information about the users on the system. 
+
 How do you delete a user in Linux?
+To delete users using the userdel command, you need to be logged in as root or a user with sudo access.
+
 How do you modify user information in Linux?
+usermod command or modify user is a command in Linux that is used to change 
+the properties of a user in Linux through the command line
+
 What is the purpose of the /etc/shadow file?
 How do you change a user's password in Linux?
 What is the command to list all users in Linux?
