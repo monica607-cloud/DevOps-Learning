@@ -278,6 +278,10 @@ What is the difference between hard link and Soft link?
 #Archive and Compression :
 
 What is the purpose of archive?
+Archive files are used to collect multiple data files together into a single file for easier portability and storage,
+or simply to compress files to use less storage space. Archive files often store directory structures, 
+error detection and correction information, comments, and some use built-in encryption.
+
 Which tool do you used for archiving the files?
 What is compression?
 Which tools do you used for compression the data?
