@@ -41,10 +41,19 @@ Here are 20 crontab-related questions based on different fields of crontab:
   ANS :-   10 0 * * 1-5  /path/to/script
 
 	14.	What is the crontab entry to run a job every second Saturday of the month at 10:00 AM?
+ ANS :- 0 10 * * 6#2 /path/to/your/script
 
 	15.	How do you schedule a task to run only during the summer months (June, July, August)?
+  ANS :-        * * * 6,7,8 *  /path/to/script
+
 	16.	How would you write a crontab entry to execute a script every minute between 6:00 AM and 8:00 AM daily?
 	17.	How do you execute a script every third day of the month at 3:30 PM?
+
 	18.	What is the syntax for running a cron job only on the 15th and 30th of each month?
+     ANS :-    * * 15-30 * /path/to/script
+
 	19.	How can you set up a cron job to run at 4:00 PM every weekday in May?
+    ANS :-      0 16 * 5 1-5 /path/to/script
+
 	20.	How do you schedule a task to run on the first Monday of every month at 2:00 AM?
+   ANS :-    0 2 1 * 1 /path/to/script
