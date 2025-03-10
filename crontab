@@ -38,7 +38,10 @@ Here are 20 crontab-related questions based on different fields of crontab:
                 0,30 * * * *  /path/to/script
 
 	13.	How can you run a task every 10 minutes at midnight on weekdays only?
+  ANS :-   10 0 * * 1-5  /path/to/script
+
 	14.	What is the crontab entry to run a job every second Saturday of the month at 10:00 AM?
+
 	15.	How do you schedule a task to run only during the summer months (June, July, August)?
 	16.	How would you write a crontab entry to execute a script every minute between 6:00 AM and 8:00 AM daily?
 	17.	How do you execute a script every third day of the month at 3:30 PM?
