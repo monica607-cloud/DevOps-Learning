@@ -1,18 +1,42 @@
 Here are 20 crontab-related questions based on different fields of crontab:
 
 	1.	What does the * symbol mean in the minute field of a crontab entry?
- ANS :- 
+     ANS :-    In the minute field of a crontab entry, the  * means every minute or all minutes
+
 	2.	How can you schedule a task to run every 15 minutes using crontab?
+     ANS :-        */15 * * * *  /path/to/script
+
 	3.	What is the correct crontab entry to run a script at 7:00 AM every day?
+    ANS : -    * 7 * * * /path/to/script
+
 	4.	How do you run a command every Sunday at midnight in crontab?
+   ANS :-       0 0 * * 0 /path/to/script
+
 	5.	How can you run a task at 9:00 PM on the first day of every month using crontab?
+    ANS :-        0 21 1 * * /path/to/script
+
 	6.	What does the /5 notation mean in the crontab minute field?
+   ANS :- /5 schedule a job to run every 5 minutes
+
 	7.	How do you schedule a job to run every weekday (Monday to Friday) at 3:00 PM?
+   ANS : -    0 15 * * 1-5 /path/to/your/script
+
 	8.	What is the crontab syntax for running a task at 6:00 AM every day in December?
+  ANS :-       0 6 * 12 * /path/to/your/script
+
 	9.	How do you set up a cron job to run every hour?
+  ANS :-        0 *  * * * /path/to/script
+
 	10.	How can you schedule a task to run at 12:00 AM on the 15th of every month?
+  ANS :-      0 12 15 * * /path/to/script
+
 	11.	What does the 1-5 notation in the day of the week field represent in crontab?
+ ANS :-             1-5 notation represents (monday -friday) days of the week 
+
 	12.	How do you schedule a cron job to run every 30 minutes?
+  ANS  :-        */30 * * * *  /path/to/script
+                0,30 * * * *  /path/to/script
+
 	13.	How can you run a task every 10 minutes at midnight on weekdays only?
 	14.	What is the crontab entry to run a job every second Saturday of the month at 10:00 AM?
 	15.	How do you schedule a task to run only during the summer months (June, July, August)?
