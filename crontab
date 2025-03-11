@@ -47,7 +47,10 @@ Here are 20 crontab-related questions based on different fields of crontab:
   ANS :-        * * * 6,7,8 *  /path/to/script
 
 	16.	How would you write a crontab entry to execute a script every minute between 6:00 AM and 8:00 AM daily?
+	ANS:-   * 6-8 * * *
+
 	17.	How do you execute a script every third day of the month at 3:30 PM?
+	ANS :-  30 15 3 * *
 
 	18.	What is the syntax for running a cron job only on the 15th and 30th of each month?
      ANS :-    * * 15-30 * /path/to/script
