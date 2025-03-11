@@ -16,3 +16,6 @@ grep  search information in file  cat name | grep root  it use mostly with pipe
 sed and awk steam editior text manipulation tool used to perform besic text transformation and advanced operations 
 
 echo command used to print data echo "text" it will print data  Eg. "sentence"> file name  copy text in file name 
+to replace and substitude command sed command used 
+EX. sed 's/original word/replace word /' file name 
+TASK :- substitude and replace every singal word from a file using sed command 
