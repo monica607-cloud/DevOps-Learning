@@ -22,4 +22,5 @@ to replace and substitude command sed command used
 EX. sed 's/original word/replace word /' file name 
 echo "text" >> file name it will add new data with original data 
 TASK :- substitude and replace every singal word from a file using sed command 
+sed -i 's/linux/unix/g' plm   (sed -i 's/original word/replace word/g' file name )
 awk '/manager/{print}' file name  scan and prinnt the line 
