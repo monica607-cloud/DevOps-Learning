@@ -18,4 +18,6 @@ sed and awk steam editior text manipulation tool used to perform besic text tran
 echo command used to print data echo "text" it will print data  Eg. "sentence"> file name  copy text in file name 
 to replace and substitude command sed command used 
 EX. sed 's/original word/replace word /' file name 
+echo "text" >> file name it will add new data with original data 
 TASK :- substitude and replace every singal word from a file using sed command 
+awk '/manager/{print}' file name  scan and prinnt the line 
