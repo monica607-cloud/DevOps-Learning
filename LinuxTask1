@@ -10,3 +10,9 @@ in vim editior for numbering cat -n  file name
 Task :- output of a file from line number 15-20 tail
 sort -n file name for sorting number
 sort -r for reverse
+uniq command use to remove duplicate lines uniq option path 
+wc shows words characters and lines  wc file name
+grep  search information in file  cat name | grep root  it use mostly with pipe
+sed and awk steam editior text manipulation tool used to perform besic text transformation and advanced operations 
+
+echo command used to print data echo "text" it will print data  Eg. "sentence"> file name  copy text in file name 
