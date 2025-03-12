@@ -8,7 +8,7 @@ Compress the projects directory into a .tar.gz archive.
 set -n for numbering
 in vim editior for numbering cat -n  file name 
 Task :- output of a file from line number 15-20 tail
-tail -n +15 zzz|head -n 6
+tail -n +15 zzz|head -n 6   (zzz file name)
 
 sort -n file name for sorting number
 sort -r for reverse
