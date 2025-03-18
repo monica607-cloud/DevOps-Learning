@@ -253,9 +253,21 @@ What is the meaning of minimum, maximum and warning days of user password?
 #Group Management :
 
 What is a group in Linux, and why is it used?
+In Linux, there can be multiple users (those who use/operate the system), 
+and groups are nothing but a collection of users. Groups make it easy to manage users with the 
+same security and access privileges. A user can be part of different groups. The ‘groups’ command is 
+a powerful tool that allows administrators to view the group memberships of a user and retrieve information about user groups on a Linux 
+System.
+
 How do you create a new group in Linux?
+To create a new group, use the groupadd command
+
 How do you delete a group in Linux?
+The groupdel command is used to delete an existing group from the system ex. groupdel option groupname 
+
 What is the purpose of the /etc/group file?
+The /etc/group file stores group information and is the default configuration file.
+
 How do you add a user to a group?
 How do you remove a user from a group?
 What is a primary group and a supplementary group?
