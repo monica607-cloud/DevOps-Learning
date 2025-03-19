@@ -163,6 +163,10 @@ Vim has its own terminology for copying, cutting, and pasting. Copy is called ya
 cut is called delete (d), and paste is called put (p).
 
 How do you delete a line in Vim?
+ANS :- Press the Esc key to go to normal mode.
+Place the cursor on the line you want to delete.
+Type dd and hit Enter to remove the line.
+Pressing dd multiple times will delete multiple lines.
 
 To delete a line in Vim, you can use the dd command:
 Press the Esc key to go to normal mode.
@@ -241,7 +245,15 @@ usermod command or modify user is a command in Linux that is used to change
 the properties of a user in Linux through the command line
 
 What is the purpose of the /etc/shadow file?
+The /etc/shadow file stores actual password in encrypted format for user’s account with additional properties related to user password 
+i.e. it stores secure user account information. All fields are separated by a colon (:) symbol. 
+It contains one entry per line for each user listed in /etc/passwd file.
+
 How do you change a user's password in Linux?
+To change the password for another user, you need to use the passwd command followed by the username of the user 
+whose password you want to change.
+For example, to change the password for a user named linuxize, you would run: sudo passwd linuxize
+
 What is the command to list all users in Linux?
 How do you lock and unlock a user account?
 How do you switch to another user in Linux?
