@@ -5,3 +5,4 @@
 
    Q. Create file:
    A. touch filename (go inside the folder where we wanted to create the file and trigger mentioned command)
+ cd / is use to go root directiory
