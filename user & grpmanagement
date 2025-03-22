@@ -10,6 +10,14 @@ Q 4. How to add users in group
   A. To add users in group we use usermod command Eg.(sudo usermod -aG groupname username)
 
 To switch user we use su command Eg (su username)
+user - system user/standard user/root user
+useradd or adduser to add new user
+groupadd to add group
+usermod to modify user and to modify grp groupmod
+passwd to add password 
+gpasswd to add passwd and also add member to group 
+gpasswd -a username 
+
 
 View or Change Password Policy
 chage <option> <parameter> <username>
@@ -75,6 +83,10 @@ Options:
 -A : Assign a user as group admin
 
 chage -- help  
+chage -l for list 
+minimum days -m 
+maximum -M
+-w warning 
 
 
 /etc/passwd - Stores user profile-related information.
