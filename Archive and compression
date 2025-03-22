@@ -1,0 +1,14 @@
+Archive
+tar -cvf newetc.tar /etc
+tar -tvf filename to see containt of file 
+tar -xvf file name to xtract  the file 
+
+compression 
+gzip -z
+bzip2-j
+xz-J
+
+
+archive with compression
+tar-czvf file name .tar.gz to convert in again in tar 
+gunzip filename 
