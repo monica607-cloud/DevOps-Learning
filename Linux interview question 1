@@ -322,15 +322,26 @@ How do you list the crontab jobs?
 #Search and Filter utility in Linux :
 
 What is the use of sort command?
+ANS :- Sort command is use to sort contents of the text file line by line 
+
 What is the use of uniq command?
+ANS :- The uniq command line utility that is used to report or filter out the reapeted line in file.
+
 What is the use of wc command?
+ANS :- wc(word count) this command is used to count words charachter and bytes in files.
+
 How will you find the path of file or directory in Linux file system?
+
 What is the use of grep command?
+ANS:- The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files.
 
 #Process management :
 
 How do you view running processes in Linux?
+The ps command is one of the most commonly used commands to display information about running processes.
+
 What is the difference between foreground and background processes?
+
 How do you terminate a process in Linux?
 What is a daemon in Linux?
 What are the shell jobs?
