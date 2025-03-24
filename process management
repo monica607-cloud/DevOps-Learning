@@ -1,0 +1,25 @@
+ps 
+ps -a - shows only user define process
+ps -e shows all process in user and system 
+ps -f full format info with detail
+ps -elf  (all p)
+ps -l long list 
+ppid parent process id
+pid process id
+NI nice (range is -20 to 20)
+ps -axjf shows child process also tree diagram (x is to remove terminal)
+sleep command used to frize system for some time ex sleep 30 system will sleep for 30sec
+& sign will run process in background 
+
+
+top command shows all process running as well as stop(real time process)
+htop (it also shows full info)
+running 
+stopped
+zombie
+sleep
+foreground and background process
+
+
+
+
