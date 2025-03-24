@@ -18,4 +18,5 @@ execute 1
 chmod command  for gibe permission
 for ex chmod 444 file name
 umask gives value to define permission
-
+locate and find command use to search the list of file and directories
+find /etc -name filename 
