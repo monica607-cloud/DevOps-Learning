@@ -1,5 +1,5 @@
 ps 
-ps -a - shows only user define process
+ps -a - shows only user define process start and stop 
 ps -e shows all process in user and system 
 ps -f full format info with detail
 ps -elf  (all p)
@@ -21,6 +21,18 @@ stopped
 zombie
 sleep
 foreground and background process
+nice value decides priority of process 
+to search process id of process pidof sleep 
+shows process id of sleep
+to set priority of process we can use renice command 
+renice -n -10 -p 5853   (-10 priority) (5853 process id )(n is number)
+kill command use to delete process 
+kill -l (to see the signal)
+9 to force to stop
+1 hang process 
+15 to stop process 
+Ex- kill -9 processid 
+pkill -9 6328 process kill
 
 
 
