@@ -16,17 +16,17 @@ Windows : - Windows is a properitaty operating system developed by microsoft
             Its source code is not accessible for public
             User must purchase the license to use it 
 
-What is the Linux kernel ?
+3 . What is the Linux kernel ?
 Ans :- The kernal is the program that actually communicate with hardware combining shell and kernal form operating sysytem
 
-What are the advantages of using Linux ?
+4. What are the advantages of using Linux ?
 Ans :- Linux is open source its source code freely available to view modify and distribute.
        Linux is known for stability and reability 
         Linux is more secure as compare to unix 
         it is freely available to use 
         
-What are the different types of Linux distributions ?
-There are multiple types of distributions for eg.
+5 . What are the different types of Linux distributions ?
+ ANS :- There are multiple types of distributions for eg.
   Ubantu 
   Linux Mint
   Debian
@@ -35,114 +35,114 @@ There are multiple types of distributions for eg.
   Slackware linux etc.
 
 
-Explain the Linux architecture ?
+6 .Explain the Linux architecture ?
 Ans :- There are 4 stages in linux architecture
   1.Application layer :-User intract with system through varies application eg. ofc,games this application run outer layes of structure
   2.Shell provides environment to run any application it provides interface to the user to ineract with hardware
   3.Kernal is program which actually communicate with hardware combining shell and kernal form operating system
   4.Hardware is component such as motherboard CPU,Harddisk etc are comes under this layer
 
-What is shell ?
+7. What is shell ?
 ANS :- Shell provides environment to run any application it provides interface to user to interact with hardware 
 
 #Basic Commands :
 
-What command is used to display the current date and time?
+8 . What command is used to display the current date and time?
 ANs :- (date) command use to display current date and time (date -u )command used to display date in UTC form 
 
-What is the purpose of the ls command?
+9. What is the purpose of the ls command?
 ANS :- ls command in linux is used to list file and directories.
 
-How do you create a new directory and file in Linux?
+10 .How do you create a new directory and file in Linux?
 ANS :- using mkdir command you can create directory and using touch command we cand create file 
 
-How do you copy files and directories?
+11. How do you copy files and directories?
 ANS:- To copy file we use cp command (cp source destination ) to copy directiory we use (cp -r source destination) 
 
-What is the difference between cp and mv commands?
+12. What is the difference between cp and mv commands?
 ANS :-cp command used to copy file from source to destination and mv command use to move file from one source to destination 
 also used to rename file 
       
-How do you delete files and directories in Linux?
-rm filename  to delete file and folder 
+13. How do you delete files and directories in Linux?
+ANS :- rm filename  to delete file and folder 
 rmdir to delete directory 
 rm -v to view and delete file 
 rm -vf to delete forcefully as well as view 
 rm * to delete all file 
 rm -r to delete all recurcive file and folder or non empty file or folder
 
-What is the command to rename the file?
-mv command is used to rename file (mv file or foldername and change name  )
+14 .What is the command to rename the file?
+ANS :- mv command is used to rename file (mv file or foldername and change name  )
 
 
-Which commands do you used to read the file?
+15 . Which commands do you used to read the file?
 to read file we can use cat command (cat file name)
 
-What is the difference between head and tail command?
-ANS:- The head command is used to display first part of file it default display top 10 lines(head filename)
-tail command is used to display last 10 line of the file 
+16 . What is the difference between head and tail command?
+   ANS:- The head command is used to display first part of file it default display top 10 lines(head filename)
+      tail command is used to display last 10 line of the file 
 
-How will you list the hidden files?
-ANS:-To list hidden file ls -a source
+17 . How will you list the hidden files?
+ ANS:-To list hidden file ls -a source
 
-What is the purpose of the cat command?
-cat command is used to display content of the file. 
+18 . What is the purpose of the cat command?
+ANcat command is used to display content of the file. 
 
-What is command to check kernel name and version?
+19 . What is command to check kernel name and version?
 ANS :- uname -r 
 
-What is the use of tree command?
+20. What is the use of tree command?
 ANS:-Tree command is used to visualize directory structure and orgnised the file and directory 
 
-How will you check current working directory?
+21 . How will you check current working directory?
 Using pws command we can check present working directory.
 
-What does the alias command do?
+22 . What does the alias command do?
 ANS:- alias is user define shortcut for longer command 
 
 #Linux File System Hierarchy :
 
-What is the purpose of the root (/) directory in Linux?
- all the files and directories are located under the root directory 
+23 . What is the purpose of the root (/) directory in Linux?
+ ANS :- all the files and directories are located under the root directory 
 
-What is the difference between /bin and /sbin?
+24 . What is the difference between /bin and /sbin?
 ANS:- /bin directory contains binaries that are essential to the operating system.
 /sbin directory stores the binaries required by the operating system for system management. 
 
-What is the purpose of the /etc directory?
+25 . What is the purpose of the /etc directory?
 directory is used to store system-wide configuration files. These files are essential for 
 configuring the behavior of the operating system and installed applications
 
-What type of files are stored in the /home directory?
+26 . What type of files are stored in the /home directory?
 ANS:- The home directory contains the user data and user-specific configuration files
 
-What is the use of the /root directory?
+27. What is the use of the /root directory?
 ANS :- The root directory is the starting point for all user directories. In simple words, 
 all the files and directories are located under the root directory in Linux. Moreover, 
 the root directory is the only directory that is guaranteed to exist on the system, and all 
 other directories are created as subdirectories of the root directory.
 
-What is the difference between a relative path and an absolute path in the Linux file system?
+28 . What is the difference between a relative path and an absolute path in the Linux file system?
 ANS:- A relative path specifies the location of a file or directory in relation to the current working directory.
 Unlike an absolute path, which starts from the root directory, a relative path does not begin with a slash ('/') and utilizes 
 navigational shortcuts to refer to the file or directory
 
 
-How can you check the disk usage of a specific directory?
+29 . How can you check the disk usage of a specific directory?
 to check disk usage we can use du -h command 
 
-What is the default mount point for external devices in Linux?
+30 . What is the default mount point for external devices in Linux?
 Mounting is the process of attaching a storage device or partition to a directory or mount point so that its contents 
 can be accessed and managed by computer system users.
 
 #Vim editor :
 
-What is Vim editor?
+30 . What is Vim editor?
 Vim, short for Vi IMproved, is a highly configurable text editor built to enable efficient text editing.
 It’s an enhanced version of the Vi editor, which was developed back in the 1970s. Vim is widely used by programmers,
 system administrators, and anyone who spends a significant amount of time working in the terminal
 
-What are the different modes in Vim?
+31 . What are the different modes in Vim?
 There are six modes in vim editior 
 1.Normal mode :- In Vim, Normal mode is your starting point for navigating and controlling text.
 2.Insert mode:-nsert Mode in Vim is where the magic happens – it's the space where you actively insert and manipulate your text.
@@ -153,53 +153,53 @@ offering flexibility in the types of selections made
 6.Replace mode :- Replace mode in Vim provides a focused environment for substituting existing text with new content,
 ensuring a seamless and controlled editing process.
 
-How do you switch between insert mode and command mode?
+32 . How do you switch between insert mode and command mode?
 ANS :- Insert mode :- command for insert is i and if you want to switch to command mode we can use esc button.
 
-By default which mode get open when you use the vim editor?
+33. By default which mode get open when you use the vim editor?
 By default normal mode get open when you use vim editor.
 
-How do you copy and paste text in Vim?
+34. How do you copy and paste text in Vim?
 Vim has its own terminology for copying, cutting, and pasting. Copy is called yank (y), 
 cut is called delete (d), and paste is called put (p).
 
-How do you delete a line in Vim?
+35 . How do you delete a line in Vim?
 ANS :- Press the Esc key to go to normal mode.
 Place the cursor on the line you want to delete.
 Type dd and hit Enter to remove the line.
 Pressing dd multiple times will delete multiple lines.
 
-To delete a line in Vim, you can use the dd command:
+36 . To delete a line in Vim, you can use the dd command:
 Press the Esc key to go to normal mode.
 Place the cursor on the line you want to delete.
 Type dd and hit Enter to remove the line.
 Pressing dd multiple times will delete multiple lines.
 
-How do you undo and redo changes in Vim?
+37. How do you undo and redo changes in Vim?
 To undo changes in Vim, you need to:
 Go to command mode by pressing Esc key.
 Press the u key to undo the changes.
 To undo multiple changes, prepend u with a number, like 5u to undo the five recent changes.
 To redo the last undone change, simply press Ctrl + r.
 
-How do you exit Vim without saving changes?
+38 . How do you exit Vim without saving changes?
 To exit Vim without saving changes, you need to switch to command mode by pressing the Esc key. 
 Then, press : (colon) to open the prompt bar in the bottom left corner of the window.
 Type q! after the colon and hit Enter to exit without saving the changes
 
-How do you exit Vim with saving changes?
+39 . How do you exit Vim with saving changes?
 nd then you can use the following options:
 :w – Save the changes but don’t exit
 :wq – Save and quit
 :q – Just Quit (if you have unsaved changes, you’ll see this warning: E37: No write since last change (add ! to override))
 :q! – Force quit (it will discard any unsaved changes)
 
-How do you search for a specific word or pattern in a file?
+40 . How do you search for a specific word or pattern in a file?
 In the most basic form, you use grep to match literal patterns within a text file.
 This means that if you pass grep a word to search for, it will print out every line in the file containing that word.
 Execute the following command to use grep to search for every line that contains the word GNU:
 
-How do you perform a search and replace in Vim?
+41 . How do you perform a search and replace in Vim?
 First, you need to open a document in Vim and then, enter command mode. After this, 
 vim will switch to search mode and whatever you will type after '/', vim will search its first occurrence in the document.
 /Search word.
@@ -213,49 +213,49 @@ replace_word - Next, it is takes the world we want to replace the searched word.
 g - These are extra options; here 'g' means global which will replace every occurence in 
 all specified lines instead of the first occurence. Also, there is an option 'c' which asks for confirmation at every search.
 
-How do you move to the beginning or end of a line in Vim?
+42 . How do you move to the beginning or end of a line in Vim?
 Press the Esc key to be in the normal mode.
 Press the 0 key to move the cursor to the beginning of the line (column 0)
 Press $ key to move the cursor to the end of the line (last column).
 
-How do you enable line numbers in Vim?
+43 . How do you enable line numbers in Vim?
 Absolute Line Numbering in Vim/Vi
 Relative Line Numbering
 Hybrid Line Numbering
 Permanently Enable Vim Line Numbers
 
-What is the use of visual mode and how will you open it?
+44 . What is the use of visual mode and how will you open it?
 The Visual mode allows you to visually highlight (select) specific text areas and run commands on them.
 To enter the Visual mode from the Normal mode, you can press on v—which will mark the beginning of the selection—and then
 use the arrow keys to move the cursor to the desired end of the selection.
 
 #User Management :
 
-How do you create a new user in Linux?
+45 . How do you create a new user in Linux?
 useradd or adduser is a command line utility that can be used to create new users in Linux and Unix systems.
 
-What is the purpose of the /etc/passwd file?
+46 . What is the purpose of the /etc/passwd file?
 The /etc/passwd file is the most important file in Linux operating system. 
 This file stores essential information about the users on the system. 
 
-How do you delete a user in Linux?
+47 . How do you delete a user in Linux?
 To delete users using the userdel command, you need to be logged in as root or a user with sudo access.
 
-How do you modify user information in Linux?
+48 . How do you modify user information in Linux?
 usermod command or modify user is a command in Linux that is used to change 
 the properties of a user in Linux through the command line
 
-What is the purpose of the /etc/shadow file?
+49 . What is the purpose of the /etc/shadow file?
 The /etc/shadow file stores actual password in encrypted format for user’s account with additional properties related to user password 
 i.e. it stores secure user account information. All fields are separated by a colon (:) symbol. 
 It contains one entry per line for each user listed in /etc/passwd file.
 
-How do you change a user's password in Linux?
+50 . How do you change a user's password in Linux?
 To change the password for another user, you need to use the passwd command followed by the username of the user 
 whose password you want to change.
 For example, to change the password for a user named linuxize, you would run: sudo passwd linuxize
 
-What is the command to list all users in Linux?
+51 . What is the command to list all users in Linux?
 How do you lock and unlock a user account?
 How do you switch to another user in Linux?
 How do you view information about the currently logged-in user?
