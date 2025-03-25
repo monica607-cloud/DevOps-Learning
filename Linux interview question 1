@@ -256,8 +256,19 @@ whose password you want to change.
 For example, to change the password for a user named linuxize, you would run: sudo passwd linuxize
 
 51 . What is the command to list all users in Linux?
-How do you lock and unlock a user account?
-How do you switch to another user in Linux?
+ANS :-  use the awk command with -F option
+
+52 . How do you lock and unlock a user account?
+ANS :- In Linux, we can use the "passwd" command with the "-l" option to lock a user account. 
+This option locks a user account, preventing the user from logging in.
+passwd -l to lock the user 
+usermod --lock username
+chage -l username
+
+53. How do you switch to another user in Linux?
+In Linux, switching users in the terminal is a common task, especially for system administrators. 
+There are several commands to achieve this, primarily su and sudo.
+
 How do you view information about the currently logged-in user?
 What is the purpose of the /etc/skel directory?
 How do you view and modify a user's account expiration?
