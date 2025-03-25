@@ -303,10 +303,28 @@ How do you change the password of group?
 #File Permissions and Access Control :
 
 What is the difference between user, group, and others in file permissions?
+ANS :- user :- User is the owner of the file. When you create a file, you become the owner of the file. 
+The ownership can be changed as well, but we’ll see that later.
+group :- Every user is part of a certain group(s).
+A group consists of several users and this is one way to manage users in a multi-user environment.
+other :- ‘Other’ can be considered as a big group with all the users on the system. Basically, 
+anyone with access to the system belongs to this group.
+
 What is the meaning of Read, Write and execute permission over file and directory?
+ANS:- Read (r): View the file’s contents or list a directory’s files.
+Write (w): Modify a file or add/delete files in a directory.
+Execute (x): Run a file as a program/script or enter a directory.
+
 How do you change ownership of a file or directory?
+ The `chown` command, short for “change owner,” is a powerful tool that allows users to change the owner of files and directories
+chown master file1.txt
+
 How do you view file permissions in Linux?
-How may types files in Linux system?
+The ls command is commonly used to list directory contents. By adding the -l option, you can view detailed information about files, including their permissions,
+ownership, size, and modification timestamps. The syntax is:
+ls -l filename 
+
+How many types files in Linux system?
 How do you set permissions using chmod with examples?
 How many type of link files in Linux system?
 What is the difference between hard link and Soft link?
