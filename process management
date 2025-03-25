@@ -33,7 +33,10 @@ kill -l (to see the signal)
 15 to stop process 
 Ex- kill -9 processid 
 pkill -9 6328 process kill
-
+pgrep is used to search process
+pgrep -a sleep (sleep process name)
+pidof sleep (process id of )
+killall sleep(kill all process)
 
 
 
