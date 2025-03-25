@@ -7,7 +7,7 @@ ps -l long list
 ps -aux all process in wide format 
 ppid parent process id
 pid process id
-NI nice (range is -20 to 20)
+NI nice (range is -20 to 19)
 ps -axjf shows child process also tree diagram (x is to remove terminal)
 sleep command used to frize system for some time ex sleep 30 system will sleep for 30sec
 & sign will run process in background 
