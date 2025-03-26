@@ -293,6 +293,8 @@ What is the purpose of the /etc/group file?
 The /etc/group file stores group information and is the default configuration file.
 
 How do you add a user to a group?
+sudo usermod -a -G groupname username
+
 How do you remove a user from a group?
 What is a primary group and a supplementary group?
 How do you change a user's primary group?
