@@ -8,6 +8,8 @@ crontab =>
 crond checks the backround process
 var/spool/cron stores file
 crontab -e to edit cron jobs
+crontab -l to list the job
+
 
 
 
