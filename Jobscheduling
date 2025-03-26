@@ -13,6 +13,10 @@ crontab -l to list the job
 
 wget and curl-o command used to get file from internet 
 curl-o  file url
+scp 
+scp option source ipaddress target ipaddress
+
+
 
 by default system process is called demon cant managable
 
