@@ -4,6 +4,14 @@ anacron periodic execution
 atq to see the total amount of job
 to remove job atrm command is used
 
+crontab =>
+crond checks the backround process
+var/spool/cron stores file
+crontab -e to edit cron jobs
+
+
+by default system process is called demon cant managable
+
 
 
 
