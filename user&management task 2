@@ -20,7 +20,9 @@ chage -M to set Expire users password
 Set an account expiration date for a user.
 chage -E for date 
 
+
 Disable a user account without deleting it.
 View system login history and failed login attempts.
 Create a new user with a specific UID and GID.
 Assign a user to multiple groups.
+etc/passwd to see user information
