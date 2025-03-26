@@ -2,5 +2,8 @@ at - is for single time execution
 crontab - periodic execution
 anacron periodic execution 
 atq to see the total amount of job
+to remove job atrm command is used
+
+
 
 
