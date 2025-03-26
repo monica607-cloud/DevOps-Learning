@@ -296,10 +296,26 @@ How do you add a user to a group?
 sudo usermod -a -G groupname username
 
 How do you remove a user from a group?
+deluser <username> <groupname>
+
 What is a primary group and a supplementary group?
+Primary Group: Specifies a group that the operating system assigns to files that the user creates.
+Naturally, each user must belong to a primary group Secondary Group: 
+Specifies one or more groups to which a user also belongs. 
+In addition, users can belong to up to 15 secondary groups
+
 How do you change a user's primary group?
+Set or Modify a User’s Primary Group: sudo usermod -g groupname username 
+This command changes the primary group of the user to the specified group.
+
 How do you view the groups a user belongs to?
+There are multiple ways to find out the groups a user belongs to. 
+The primary user’s group is stored in the /etc/passwd file and the supplementary groups, if any, are listed in the /etc/group file.
+One way to find the user’s groups is to list the contents of those files using cat , less or grep 
+
 How do you change group ownership of a file or directory?
+The `chgrp` command in Linux is used to change the group ownership of a file or directory
+
 How do you change the password of group?
 
 #File Permissions and Access Control :
