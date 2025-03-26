@@ -11,7 +11,8 @@ crontab -e to edit cron jobs
 crontab -l to list the job
 
 
-
+wget and curl-o command used to get file from internet 
+curl-o  file url
 
 by default system process is called demon cant managable
 
