@@ -1,0 +1,24 @@
+Networking is related to IP address
+ip use to connect 2 device
+Dnux domain name linux 
+WWW.amazon.com
+ifconfig - interface configrator (to see traffic flow network interface)
+traceroute - (traceroute destination )
+ping (to check internate connectivity) EX.ping ipaddress
+nslookup amazon.in 
+(To check ip address)
+host- to see server ipaddress
+host servername (google.com)
+netstat - 
+dig - to see domain information 
+dig A amazon.com 
+route
+ip addr
+
+https -hyper text transfer protocol secure 
+protocol is set of rules
+port - assign number  to protocol 
+
+
+IPV4 devided by 4 octant 
+IP can be public or private
