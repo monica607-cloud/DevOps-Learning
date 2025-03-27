@@ -19,3 +19,16 @@ Console password
 
 ***************
 Show
+There are 3 types of status check 
+system status check - failed
+instance status check 
+EBS status check
+
+5 types of instance
+security 
+TCP port 
+UDP port 
+
+in instance security group:- group of security groups
+inbound outbound
+
