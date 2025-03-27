@@ -15,6 +15,7 @@ wget and curl-o command used to get file from internet
 curl-o  file url
 scp 
 scp option source ipaddress target ipaddress
+stat file neme
 
 
 
