@@ -1,3 +1,4 @@
 apache
 nginx
 tomcat
+Deploy nginx server and forword it to a custom port
