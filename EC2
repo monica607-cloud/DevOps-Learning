@@ -1,0 +1,5 @@
+hardware 
+storage SSD/HDD
+EBS - Elastic block Storage
+EC2 provide =OS RAM CPU /VM/Instance
+we have to configure networking security and manage storage
