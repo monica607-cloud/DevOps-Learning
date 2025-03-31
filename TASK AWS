@@ -1,2 +1,5 @@
 create a budget alert in aws account 
 create a linux server and windows server and acess those servers using SSH and RDP
+Difference between EBS and EFS and normal storage?
+EBS types 
+Uses EFS types
