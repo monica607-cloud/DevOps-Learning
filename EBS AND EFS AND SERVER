@@ -1,0 +1,45 @@
+EBS (Elastic Block Store)
+Type: Block Storage.
+
+Use Case: Primarily for attaching storage volumes to EC2 instances.
+
+Structure: EBS volumes act like hard drives that you can attach to a server, like a traditional disk drive.
+
+Access: Can only be mounted to a single EC2 instance at a time (though you can create snapshots or back up data).
+
+Performance: Offers high-performance storage, optimized for workloads that require low latency and high IOPS (Input/Output operations per second), such as databases.
+
+Scaling: Can be resized and modified easily.
+
+Cost: Generally, EBS is pay-as-you-go, based on the amount of storage and I/O performance.
+
+ EFS (Elastic File System)
+Type: File Storage.
+
+Use Case: A shared file system for multiple EC2 instances to access simultaneously.
+
+Structure: EFS works like a traditional file system, where multiple machines can mount and read/write to it concurrently.
+
+Access: It is accessible to multiple EC2 instances at the same time and supports NFS (Network File System) protocols.
+
+Performance: Scales automatically as data is added, with varying performance levels (standard or infrequent access).
+
+Scaling: Auto-scaling in terms of storage capacity, as it adjusts to the amount of data without needing manual intervention.
+
+Cost: Based on the amount of storage used and the performance mode selected.
+
+3. Normal Server (On-Premise/Traditional Server)
+
+Type: Typically a physical server with local storage (HDD or SSD).
+
+Use Case: Standard servers where all the storage, processing, and file system management are local to the machine itself.
+
+Structure: The server has a fixed amount of local storage attached directly to it.
+
+Access: Can only be accessed by the server itself (or through network shares if configured).
+
+Performance: Performance depends on the hardware (CPU, RAM, Disk I/O). Scaling requires manual upgrades (e.g., adding more storage or upgrading the hardware).
+
+Scaling: Scaling is limited and can be expensive since it may require adding more hardware.
+
+Cost: Typically higher upfront costs for hardware and maintenance, but no ongoing cost unless you need to scale.
