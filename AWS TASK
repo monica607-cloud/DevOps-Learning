@@ -23,3 +23,4 @@ RDS
 MONGO DB
 MARYA DB
 POST GRES SQl
+Deploy nginx server and forword it to a custom port
