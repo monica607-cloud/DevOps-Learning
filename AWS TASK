@@ -4,3 +4,6 @@ create a windows server and give RDP access to my laptop
 create 2 ubuntu server now SSH from server 1 to server 2
 cloudwatch (set up budget alert in aws account)
 Difference between EBS and EFS and normal storage?
+create a budget alert in aws account 
+create a linux server and windows server and acess those servers using SSH and RDP
+create a instance from template?
