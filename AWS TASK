@@ -3,3 +3,4 @@ inbound outbound
 create a windows server and give RDP access to my laptop
 create 2 ubuntu server now SSH from server 1 to server 2
 cloudwatch (set up budget alert in aws account)
+Difference between EBS and EFS and normal storage?
