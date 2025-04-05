@@ -95,7 +95,7 @@ ANS :- uname -r
 ANS:-Tree command is used to visualize directory structure and orgnised the file and directory 
 
 21 . How will you check current working directory?
-Using pws command we can check present working directory.
+Using pwd command we can check present working directory.
 
 22 . What does the alias command do?
 ANS:- alias is user define shortcut for longer command 
