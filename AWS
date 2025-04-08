@@ -19,6 +19,9 @@ Console password
 
 ***************
 Show
+df-hT
+cat /etc/os-realease
+to view version of os
 There are 3 types of status check 
 system status check - failed
 instance status check 
