@@ -8,11 +8,16 @@ You have successfully enabled the user's new password.
 This is the only time you can view this password. After you close this window, if the password is lost, you must create a new one.
 Console sign-in URL
 
+Console sign-in URL
+
 https://430118821047.signin.aws.amazon.com/console
 User name
-local
-password Rani@9090
 
+personal-monica
+Console password
+
+***************
+Show
 personal-monica
 Change password - Prashant@9090
 Console password
