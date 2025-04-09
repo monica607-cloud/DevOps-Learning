@@ -20,6 +20,11 @@ Genkins
 EFS  
 RDS
 MONGO DB
+
+
+create a VPC with CIDR block 192.68.0.0/17 create its 6 subnet
+create a VPC with CIDR block 172.16.0.0/25 and create its subnets
+
 MARYA DB
 POST GRES SQl
 Deploy nginx server and forword it to a custom port
