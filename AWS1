@@ -1,9 +1,0 @@
-Difference between EBS and EFS and normal storage?
-The full form of Amazon EBS is Amazon Elastic Block Store / The full form of Amazon EFS is Amazon Elastic File System
-It is used to provide the block-level storage volumes for the use of EC2 instances. /It is simple to use.
-It is mainly used for data that should be quickly accessible and requires long term durability. /It is used in modernize application development
-It is suitable for both types of database-style applications -:
-
-1. Those rely on random reads
-
-2. Those rely on random writes. /Industries use this for enhancing content management systems

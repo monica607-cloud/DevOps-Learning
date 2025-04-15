@@ -1,0 +1,28 @@
+difference between application load balancer and network load balancer
+
+Application Load Balancer (ALB)
+	Layer 7 (Application Layer)
+HTTP, HTTPS, WebSocket
+Advanced: path-based, host-based, headers, query strings
+Good for web apps, but adds some latency
+Web applications, microservices (e.g., routing /api, /images)
+IP Target Support	Yes
+TLS Termination	Yes (at the load balancer)
+Health Checks	HTTP/HTTPS-based
+Static IP	No (uses DNS name)
+Pricing	Based on LCU (Load Balancer Capacity Units)
+
+Network Load Balancer (NLB):-
+Layer 4 (Transport Layer - TCP/UDP)
+Protocols Supported:-TCP, TLS, UDP
+Basic: IP and port-based routing
+Ultra-low latency, high performance
+Real-time applications, high-speed workloads (e.g., gaming, VoIP)
+IP Target Support :- Yes (great for IP-based targets, like appliances)
+TLS Termination :-Yes (if needed), or pass-through to the target
+Health Checks TCP or HTTP-based
+Yes (can assign Elastic IPs)
+pricing Based on hours and data processed
+
+
+Yes (if needed), or pass-through to the target
