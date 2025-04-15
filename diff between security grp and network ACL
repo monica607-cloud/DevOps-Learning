@@ -1,0 +1,23 @@
+difference between security group and network ACL
+
+SECURITY GROUP :-
+
+In security group, we operate at instance level.
+It support only allow rules.
+It is stateful, when we create an inbound or an outbound rule.
+We cannot block specific IP address using SGs.
+All rules are evaluated before deciding to permit trffic.
+It start with instance launch configuration.
+It applies when someone specifies security group when launching the instance and it associates with security group.
+
+NETWORK ACL :-
+In network ACL, we operate sub net level.
+It support allow rules and deny rules.
+It is stateless, it return traffic must be allowed explicitly.
+We can block specific IP Address using NACL.
+Rules are processed in number order when deciding whether allow traffic.
+In which we assigned to subnet for all instance.
+
+
+
+
