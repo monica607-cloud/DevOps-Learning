@@ -38,4 +38,5 @@ create snapshot policy
 create a VPC peering connection 
 case1- same region 
 case2 - cross account 
+difference between security group and network ACL
 
