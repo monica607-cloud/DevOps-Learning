@@ -40,3 +40,4 @@ case1- same region
 case2 - cross account 
 difference between security group and network ACL
 difference between application load balancer and network load balancer
+create load balancer
