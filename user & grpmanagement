@@ -97,4 +97,5 @@ maximum -M
 su - username - To switch user to existing user
 su -username takes u to present working directory
 chage - View and change password
+What are the different types of auto scalling policies in AWS
 
