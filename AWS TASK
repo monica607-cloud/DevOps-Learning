@@ -46,3 +46,4 @@ unable MFA for a newly created IAM user
 what is the difference between roles and policies
 what are the different types of aws policies
 create an inline policies
+mount amazon s3 bucket on ec2 instance 
