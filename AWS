@@ -41,3 +41,8 @@ in instance security group:- group of security groups
 inbound outbound
 create a windows server and give RDP access to my laptop
 create 2 ubuntu server now SSH from server 1 to server 2
+hardware 
+storage SSD/HDD
+EBS - Elastic block Storage
+EC2 provide =OS RAM CPU /VM/Instance
+we have to configure networking security and manage storage
