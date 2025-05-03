@@ -95,6 +95,135 @@ Load Balancing & Failover: Traffic is automatically routed to healthy endpoints 
 Scalable Requests: Handles massive parallel access with minimal latency or downtime
 
 Can you host a dynamic website using S3? Why or why not?
+No, you cannot host a fully dynamic website using only Amazon S3, 
+because S3 is designed to serve static content only.
+S3 is a static file server: It serves HTML, CSS, JavaScript, images, etc., but does not execute code.
+No server-side logic: You can't run dynamic languages like PHP, Python, or
+use databases — essential for dynamic content generation.
+No real-time processing: You can't handle things like form submissions or user logins natively in S3.
+
+What are multipart uploads and why are they used in S3?
+It's an S3 feature that splits a single large object into multiple smaller parts, 
+uploads each part independently, and then reassembles them on the server.
+Each part can be uploaded in parallel, and retries can be done per part if something fails.
+
+How would you allow a specific IAM user to only upload files to a bucket but not delete them?
+
+To allow a specific IAM user to upload files to an S3 bucket but prevent them from deleting anything, you can attach a custom IAM policy that:
+✅ Allows s3:PutObject (upload).
+❌ Denies s3:DeleteObject.
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowUploadsOnly",
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    },
+    {
+      "Sid": "DenyDeletes",
+      "Effect": "Deny",
+      "Action": "s3:DeleteObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    }
+  ]
+}
+
+What is object locking in S3 and how is it different from versioning?
+Object Locking and Versioning are both Amazon S3 features that help protect data, 
+but they serve different purposes and offer different levels of protection.
+S3 Object Locking prevents an object from being deleted or overwritten for
+a specified retention period or until a legal hold is removed.
+S3  Versioning :-Versioning keeps multiple versions of an object in the bucket.
+You can recover previous versions or undelete files that were accidentally removed.
+
+How do you enforce HTTPS-only access to your S3 bucket?
+To enforce HTTPS-only access to your Amazon S3 bucket (i.e., block all HTTP requests), 
+you can use a bucket policy that denies any requests not using secure transport (HTTPS).
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowOnlySecureTransport",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name",
+        "arn:aws:s3:::your-bucket-name/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    }
+  ]
+}
+
+What is the difference between bucket ACLs and bucket policies?
+ Bucket ACLs (Access Control Lists)
+Legacy method for managing access (from before IAM and bucket policies).
+Grants permissions at the bucket or object level.
+Permissions apply to specific AWS accounts, including anonymous/public access.
+Limited set of actions (e.g., READ, WRITE, FULL_CONTROL).
+Cannot use conditions, wildcards, or IAM principals.
+
+Bucket Policies
+JSON-based policies attached directly to a bucket.
+Use IAM-like syntax to define fine-grained permissions.
+Support conditions (e.g., IP address, encryption, HTTPS), wildcards, and specific actions.
+Can target users, roles, accounts, or everyone.
+
+Can you rename a file in S3? If not, what’s the workaround?
+No, you cannot directly rename a file in Amazon S3, because S3 does not have a traditional file system — 
+it uses a flat object store with object keys (which act like filenames)
+ Workaround to Rename a File in S3:
+You have to:
+Copy the object to a new key (new "filename").
+Delete the original object
+aws s3 cp s3://my-bucket/old-name.txt s3://my-bucket/new-name.txt
+aws s3 rm s3://my-bucket/old-name.txt
+import boto3
+
+s3 = boto3.client('s3')
+bucket = 'my-bucket'
+old_key = 'old-name.txt'
+new_key = 'new-name.txt'
+
+# Copy
+s3.copy_object(Bucket=bucket, CopySource={'Bucket': bucket, 'Key': old_key}, Key=new_key)
+
+# Delete original
+s3.delete_object(Bucket=bucket, Key=old_key)
+
+Why Renaming Isn't Supported Directly:
+S3 objects are stored under a key (e.g., "folder1/file.txt").
+There's no native rename API.
+You can't simply change the key — you must create a new object.
+
+How do lifecycle policies help in cost optimization for S3?
+Lifecycle policies in Amazon S3 help optimize storage costs by automatically 
+transitioning or expiring objects based on their age or other criteria — 
+reducing the need to store all data in expensive storage classes indefinitely.
+ 
+Common Lifecycle Policy Examples:
+Standard → Infrequent Access → Glacier:
+After 30 days: Move to S3 Standard-IA.
+After 90 days: Move to S3 Glacier.
+After 365 days: Delete the object.
+Log files:
+Keep logs for 7 days, then expire them to save space.
+Object version cleanup:
+Keep only the latest 3 versions; expire old versions to cut storage waste.
+
+ Benefits:
+Reduces costs without manual intervention.
+Ensures data lifecycle compliance (e.g., for logs, backups).
+Helps manage versioned buckets and prevent bloat
+
+
 
 
 
