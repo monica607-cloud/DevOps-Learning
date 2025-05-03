@@ -1,5 +1,101 @@
-hardware 
-storage SSD/HDD
-EBS - Elastic block Storage
-EC2 provide =OS RAM CPU /VM/Instance
-we have to configure networking security and manage storage
+What is the maximum size of a single object that can be uploaded to S3?
+the maximum file size is 5TB, the maximum size for a single PUT operation is 5GB - 
+this means you will be unable to upload an 8GB file with a single operation,
+and you need to use multipart upload. Note that AWS recommends multipart upload for any files larger than 100MB.
+
+What is the difference between S3 Standard and S3 Glacier?
+S3 standard
+Purpose :-General-purpose storage for frequently accessed data
+Access Latency:-Milliseconds (immediate)
+Use Case:-Websites, apps, data analytics, etc.
+storage cost:-Higher compared to Glacier
+Retrival cost:-Low or none (frequent access)
+Data avaiblity:-99%
+Durability:-99.99%
+
+S3 Glacier
+
+Purpose :-Long-term archival storage with infrequent access
+Access Latency:-Minutes to hours (retrieval delays)
+Use Case:-Backups, archives, compliance data
+storage cost:- Much lower
+Retrival cost:-Charges apply per retrieval, depending on speed
+Data avaiblity:-99%
+Durability:-99.99%
+
+Can an S3 bucket name be reused immediately after deletion? Why or why not?
+
+No, an S3 bucket name cannot be reused immediately after deletion, 
+and sometimes it might never be reusable by the same or different AWS account.
+Global Uniqueness:
+S3 bucket names are globally unique across all AWS accounts and regions.
+Once a bucket is created, its name is reserved.
+Propagation Delay:
+After a bucket is deleted, AWS needs time to propagate the deletion across its systems.
+This can take minutes to hours, during which the name remains unavailable.
+Potential Permanent Lockout:
+In rare cases, AWS may retain the bucket name indefinitely (e.g., for compliance or internal use), 
+making it permanently unavailable.
+
+What is a pre-signed URL in S3 and when would you use it?
+A pre-signed URL in Amazon S3 is a time-limited, 
+secure link that grants temporary access to a specific object in a private S3 bucket — 
+\without making the object publicly accessible.
+
+How can you prevent accidental deletion of objects in a bucket?
+
+. Enable Versioning
+What it does: Keeps multiple versions of an object.
+Benefit: If an object is deleted, the previous version can still be restored.
+Command: aws s3api put-bucket-versioning --bucket your-bucket-name --versioning-configuration Status=Enabled
+
+2. Enable MFA (Multi-Factor Authentication) Delete
+What it does: Requires MFA authentication to delete objects or suspend versioning.
+Benefit: Adds a strong layer of protection for critical buckets.
+Note: Only available via root user and must be configured via AWS CLI.
+
+ 3. Use Bucket Policies or IAM Policies
+What it does: Restricts s3:DeleteObject permission.
+Benefit: Prevents users (or roles) from deleting objects.
+Example: Deny delete access to a specific user group or role.
+
+ 4. Enable Object Lock (for compliance needs)
+What it does: Prevents object deletion for a defined retention period.
+Modes:
+Governance: Protected from most users.
+Compliance: Cannot be deleted even by admins.
+Use case: Legal hold, compliance archives.
+
+Set Lifecycle Rules Carefully
+What it does: Automatically deletes or transitions objects.
+Action: Review lifecycle rules to avoid unintended deletions.
+
+Use S3 Access Analyzer & Logging
+Monitor and audit changes to bucket policies and object-level actions.
+
+What is the purpose of S3 Transfer Acceleration?
+The purpose of Amazon S3 Transfer Acceleration is to speed up uploads and downloads 
+of objects to and from an S3 bucket — especially when clients are geographically
+distant from the target AWS Region.
+Uses Amazon CloudFront’s globally distributed edge locations.
+Data is first uploaded to the nearest edge location, then routed over AWS’s
+high-speed internal network to the S3 bucket.
+Works for both uploads and downloads
+
+How does S3 ensure high availability and durability of data?
+Data Durability: 99.999999999% (11 nines)
+Multiple Copies: Each object is automatically stored across multiple devices and at least 
+three Availability Zones (AZs) in an AWS Region.
+Integrity Checks: S3 performs regular checksums and auto-heals corrupted data by comparing replicas.
+Versioning: Optionally stores multiple versions to protect against accidental deletion or overwrites.
+
+High Availability: 99.99% (S3 Standard)
+Redundant Infrastructure: Designed for fault tolerance, even if one or more AZs go down.
+Load Balancing & Failover: Traffic is automatically routed to healthy endpoints within the region.
+Scalable Requests: Handles massive parallel access with minimal latency or downtime
+
+Can you host a dynamic website using S3? Why or why not?
+
+
+
+
