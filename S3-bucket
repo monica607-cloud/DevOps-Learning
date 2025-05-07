@@ -1,0 +1,6 @@
+ACLs disabled (recommended)
+You can do this by applying the Bucket owner enforced setting for S3 Object Ownership.
+When you apply this setting, ACLs are disabled and you automatically own and have full control
+over all objects in your bucket
+
+ACLs enabled
