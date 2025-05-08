@@ -24,6 +24,10 @@ Data avaiblity:-99%
 Durability:-99.99%
 
 Can an S3 bucket name be reused immediately after deletion? Why or why not?
+If a bucket is empty, you can delete it. After a bucket is deleted,
+the name becomes available for reuse. However, you aren't guaranteed to be able to reuse the name right away,
+or at all. After you delete a bucket, some time might pass before you can reuse the name. In addition,
+another AWS account might create a bucket with the same name before you can reuse the name.
 
 No, an S3 bucket name cannot be reused immediately after deletion, 
 and sometimes it might never be reusable by the same or different AWS account.
