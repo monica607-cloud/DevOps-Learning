@@ -46,3 +46,11 @@ storage SSD/HDD
 EBS - Elastic block Storage
 EC2 provide =OS RAM CPU /VM/Instance
 we have to configure networking security and manage storage
+
+Database Engine	Default Port
+Amazon Aurora	3306 (MySQL-compatible) or 5432 (PostgreSQL-compatible)
+MySQL	3306
+MariaDB	3306
+PostgreSQL	5432
+Oracle	1521
+SQL Server	1433
