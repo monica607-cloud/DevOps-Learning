@@ -1,3 +1,19 @@
 Version control system  :-Track every modification to the code in a special kind of database.
 2-type centralise:- local repository cvcs apache subversion
 and distributed Remote repo/local repo git mercurial  fossil bazaar
+
+
+working space
+staging area 
+local repo
+
+some commands 
+Gitadd 
+gitcommit "name"
+gitpull
+gitpush
+gitstatus for status 
+gitlogs
+gitclone to create replica 
+gitshow 
+gitfetch
