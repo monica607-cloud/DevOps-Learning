@@ -17,3 +17,8 @@ gitlogs
 gitclone to create replica 
 gitshow 
 gitfetch
+
+branches 
+master
+trunk 
+
