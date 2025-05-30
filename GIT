@@ -17,6 +17,7 @@ gitlogs
 gitclone to create replica 
 gitshow 
 gitfetch
+gitint  create new dir or repo
 
 branches 
 master
