@@ -8,7 +8,11 @@ staging area
 local repo
 
 some commands 
-Gitadd 
+git show
+Git add  to track file 
+git add . to track all file 
+git restore --stage file name 
+git reset  directly come in working tree 
 gitcommit "name"
 gitpull
 gitpush
@@ -18,6 +22,10 @@ gitclone to create replica
 gitshow 
 gitfetch
 gitint  create new dir or repo
+git remote -v
+git push origin (branch name )
+git revert  
+git ignore to remove temporary file 
 
 branches 
 master
