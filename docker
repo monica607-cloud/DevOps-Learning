@@ -1,0 +1,14 @@
+Docker - contenrization
+  docker images
+  docker pull nginx:latest
+    docker hub store image 
+    docker ps  running container
+    docker ps -a to see all container 
+    docker start 
+    docker stop (contaioner name or id )
+    docker log
+    docker run (container name )
+    docker run -d container name (to run container backround)
+    
+
+    ECR-
