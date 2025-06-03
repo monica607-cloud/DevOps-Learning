@@ -31,3 +31,21 @@ branches
 master
 trunk 
 
+to transfer on file to another is called docker
+
+difference between on premises ,virual machine and containers
+on premises- hardware/os
+hypovisor - devided os in to parts  eg.linux and windows (this is called vertualization )(guest os )
+contarization -hardware/os/container platform -devide os memory as per requirement (Host os )can be anything 
+security
+resorce 
+portable
+container is lighter than vertualization 
+if container destroy we have to create new one 
+difference between container and containerization?
+properties
+os portability 
+scalling 
+developement 
+
+
