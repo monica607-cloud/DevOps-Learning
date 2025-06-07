@@ -1,18 +1,72 @@
-Docker - contenrization
-  docker images
-  docker pull nginx:latest
-    docker hub store image 
-    docker ps  running container
-    docker ps -a to see all container 
-    docker start 
-    docker stop (contaioner name or id )
-    docker log
-    docker run (container name )
-    docker run -d container name (to run container backround)
-    
+python
 
-    ECR-
-Task 1
-apana clg tutorial 
-Task 2
-docker file
+FROM python:3.12
+WORKDIR /usr/local/app
+
+# Install the application dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy in the source code
+COPY src ./src
+EXPOSE 5000
+
+# Setup an app user so the container doesn't run as the root user
+RUN useradd app
+USER app
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+
+
+ubuntu
+
+FROM ubuntu:18.04
+
+RUN apt-get update && \
+    apt-get install -y redis-server && \
+    apt-get clean
+
+EXPOSE 6379
+
+CMD ["redis-server", "--protected-mode no"]
+
+
+dot net
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+WORKDIR /home/app
+COPY . .
+RUN dotnet restore
+RUN dotnet publish ./AccountOwnerServer/AccountOwnerServer.csproj -o /publish/
+WORKDIR /publish
+ENV ASPNETCORE_URLS="http://0.0.0.0:5000"
+ENTRYPOINT ["dotnet", "AccountOwnerServer.dll"]
+
+golang
+
+FROM golang:1.16 AS builder
+WORKDIR /app
+COPY .
+RUN go build -o /docker-gs-ping
+
+# Run stage
+FROM gcr.io/distroless/base-debian10
+COPY --from=builder /docker-gs-ping /docker-gs-ping
+CMD ["/docker-gs-ping"]
+
+
+Tomcat
+
+FROM tomcat:latest
+
+# Set environment variables
+ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom"
+
+# Copy your web application (WAR file) into the Tomcat webapps directory
+COPY your-app.war /usr/local/tomcat/webapps/
+
+# Expose Tomcat's default port
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]
