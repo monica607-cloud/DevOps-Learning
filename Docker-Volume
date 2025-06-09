@@ -1,0 +1,12 @@
+docker network ls
+network types
+bridge host overlay macvlan nun
+
+docker network create -d bridge my_bridge
+docker network ls
+docker network create -d  inspect my_bridge (info about network)
+docker run -d --name container --network my_bridge nginx
+docker run -d jenkins:2.60.3
+docker -ps
+docker connect my_bridge  festive_jepsen
+docker inspect festive_jepsen
