@@ -70,3 +70,9 @@ EXPOSE 8080
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
+
+docker volume :- 
+named volume : var/lib/docker/volume store in specific folder 
+bind volume : create new folder 
+docker volume create 
+docker volume 
