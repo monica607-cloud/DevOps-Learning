@@ -1,0 +1,51 @@
+docker compose 
+kubernates:- orchestration tool origin greek
+features of kubernates;-
+Manages running container 
+self healing
+Horizontal port (collection of containers) auto scalling 
+load balancing 
+service discovery
+multiple jobs
+roll back roll up 
+portable
+extensible 
+open source
+
+yaml configaration language
+
+kubernates manifest file 
+yaml .tml data configration language 
+
+
+service discoverying and load balancing
+storae orchastration 
+automatated rollup roll back
+self healing
+batch execution
+automatic bin packing
+horizontal scalling provides multiple server 
+
+
+disadvantage
+processing 
+ci cd pipeline 
+
+cluster group of ec2 instance 
+group of node 
+component 2 
+master node control pane 
+worker node data plane 
+cluster manage by master 
+
+cluster creation method
+cluster-aws-eks-eksctl(command )
+  for testing minikube
+multinode cluster kubedm
+kind 
+web-killercoda
+
+request receive kube-API server 
+scedule 
+manage controller 
+ETCo (key value store )
