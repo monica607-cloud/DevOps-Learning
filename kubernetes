@@ -45,7 +45,23 @@ multinode cluster kubedm
 kind 
 web-killercoda
 
+commands :-
+kubectl apply -f .yaml (kubernate command)
+kubectl get pods
+kubectl get pods -A
+kubectl get pods -o wide (for details )
+kubectl get pods appv1 -o yaml (info about container)
+kubectl describe pods appv1 
+kubectl get ns
+kubectl logs appv1
+
 request receive kube-API server 
 scedule 
 manage controller 
 ETCo (key value store )
+init container 
+main 
+sidecart container
+
+vi pod.yaml or yml 
+
