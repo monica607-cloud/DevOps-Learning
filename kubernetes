@@ -69,5 +69,28 @@ running
 succeded
 failed
 
+ekctl using manifest
+yaml file 
+kubernatese cluster eks
+directly command to create cluster 
+
+
+kubidbm and kind install 
+
+Launch instance
+Install awsCli
+kubectl install
+eksctl  install
+aws config 
+
+security credintials - create access key 
+aws s3 ls
+eksctl --version
+eks create  cluster --name eks-cluster --region us-east-1 --node-type t2.micro --nodes 1
+
+
+
+
+
 
 
