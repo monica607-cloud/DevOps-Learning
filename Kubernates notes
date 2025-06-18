@@ -46,3 +46,38 @@ Managed by Deployments, ReplicaSets, StatefulSets, etc.
 3 . Explain the concept of Container Orchestration?
 Container orchestration is the automated process of deploying, managing, scaling, networking, and monitoring containers. 
 
+What is a Pod in Kubernetes?
+A cluster of one or more Linux containers makes up a Kubernetes pod, the smallest unit of a Kubernetes application.
+
+How does Kubernetes handle container scaling?
+To automatically scale the workload to match demand, a Horizontal Pod Autoscaling in Kubernetes updates 
+a workload resource (such a deployment or stateful set). Horizontal scaling indicates that more pods are added in response to an increase in load.
+
+What is Kubelet?
+Kubelet is an important component of Kubernetes that manages containers within pods on a node.
+
+ Explain the difference between a StatefulSet and a Deployment.
+Deployment :-
+ Best for stateless applications (e.g., web frontends, APIs)
+
+Key Characteristics:
+Pod Identity: Pods are interchangeable. They do not retain a fixed identity.
+Pod Names: Randomly generated (e.g., nginx-deployment-65fbbdffbb-pvlgk)
+Scaling: Easy horizontal scaling by increasing replicas.
+Storage: Typically uses ephemeral or shared volumes; no persistent volume per pod by default.
+Rolling Updates: Supports rolling updates, blue-green deployments, and rollback.
+
+ StatefulSet
+Best for stateful applications (e.g., databases like MySQL, Cassandra)
+
+Key Characteristics:
+Pod Identity: Each pod has a stable, unique identity (hostname, network identity, and storage).
+Pod Names: Predictable and ordered (e.g., mysql-0, mysql-1, mysql-2)
+Stable Storage: Each pod can have its own PersistentVolume (retained even after pod is deleted).
+Ordered Deployment: Pods are created, deleted, and scaled in a defined order (important for clustered apps).
+Rolling Updates: Supports updates, but in a controlled, sequential manner.
+
+
+
+
+
