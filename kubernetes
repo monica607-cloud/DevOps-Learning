@@ -86,7 +86,24 @@ aws config
 security credintials - create access key 
 aws s3 ls
 eksctl --version
-eks create  cluster --name eks-cluster --region us-east-1 --node-type t2.micro --nodes 1
+eks create  cluster --name eks-cluster --region us-east-1 --node-type t2.micro --nodes 
+
+ReplicaSet :- create pods
+roll up and roll down not done 
+we can not attached volume 
+Deployement - create replica set 
+difference between deployment vs replica set 
+Expose globally provides
+
+Sevices
+Cluster IP for internal ip assign 
+Nodeport to connect with internet
+Loadbalancer distribute load 
+External name connect  with DNS
+Headless to private pod
+
+pull image from dockerhub
+
 
 
 
