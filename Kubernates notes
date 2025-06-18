@@ -1,0 +1,25 @@
+What is kubernates?
+Ans:- Kubernates is an opensource Platform design to automated Deploying scaling and oprating application container.
+
+Explain kubernate architature?
+Ans:- Kubernetes is an open-source container deployment and administration platform
+ts architecture follows a master-worker (or control plane-node) model, where the Control Plane manages the cluster, and Worker Nodes run the applications.
+Control plane component (master node) - 
+ API Server
+Entry point for all commands (kubectl, REST).
+Validates and configures data for the rest of the system.
+Communicates with etcd, controllers, and nodes.
+
+etcd
+Key-value store (like a database) that stores all cluster data and configurations.
+Stores state information like nodes, pods, secrets, config maps, etc.
+
+Scheduler
+Assigns newly created pods to available nodes based on resource needs, affinity rules, etc.
+
+Controller Manager
+Runs controllers that watch the cluster state and make changes:
+Node Controller: Checks node health.
+ReplicaSet Controller: Ensures the desired number of pod replicas.
+Deployment Controller: Manages updates/rollbacks.
+Job Controller, etc.
