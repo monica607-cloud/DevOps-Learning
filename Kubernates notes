@@ -77,6 +77,69 @@ Stable Storage: Each pod can have its own PersistentVolume (retained even after 
 Ordered Deployment: Pods are created, deleted, and scaled in a defined order (important for clustered apps).
 Rolling Updates: Supports updates, but in a controlled, sequential manner.
 
+difference between deployment vs replica set?
+ ReplicaSet
+Purpose: Ensures a specified number of identical pod replicas are always running.
+Key Characteristics:
+Maintains desired replica count.
+Automatically replaces failed pods.
+Does not support updates or rollback natively.
+Used internally by Deployments.
+Rarely used directly by users.
+
+ Deployment
+Purpose: Manages ReplicaSets and provides versioning, updates, and rollback capabilities.
+Key Characteristics:
+Manages ReplicaSets under the hood.
+Supports rolling updates, rollbacks, and pause/resume strategies.
+Provides higher-level abstraction than ReplicaSet.
+Recommended for stateless applications that may need version upgrades.
+
+ What is a Service in Kubernetes?
+Service Type	Description
+ClusterIP :- 	Default. Accessible only inside the cluster (internal communication between services).
+NodePort :- 	Exposes the service on a static port on each Node (external access via <NodeIP>:<Port>).
+LoadBalancer :- 	Creates an external load balancer (cloud providers only) and assigns a public IP.
+ExternalName :-	Maps the service to a DNS name (e.g., external-service.example.com) using CNAME.
+Headless	 :- No ClusterIP assigned; used for stateful apps or direct pod discovery.
+
+How does Kubernetes manage configuration?
+ConfigMap
+Purpose: Store non-sensitive configuration data (e.g., app settings, environment variables).
+Use Case: Pass configuration data to pods as environment variables, command-line arguments, or mounted files.
+Secret
+Purpose: Store sensitive information (e.g., passwords, API keys, TLS certs) securely.
+Use Case: Similar to ConfigMaps, but data is base64-encoded and stored securely.
+Environment Variables in Pod Specs
+You can set static or dynamic (from ConfigMap/Secret) environment variables in your pod definitions.
+Volumes
+Both ConfigMap and Secret can be mounted into pods as volumes, allowing apps to read configuration as files.
+
+Describe the role of a Master node in Kubernetes?
+The Master Node, also known as the Control Plane, is the brain of the Kubernetes cluster. 
+It is responsible for managing the entire cluster's state, scheduling workloads, and handling cluster-level decisions
+
+Feature	Master Node (Control Plane)	Worker Node
+Purpose	Cluster orchestration 
+Runs Pods? Usually no (only system pods, sometimes)	
+Components 	API Server, etcd, Scheduler, Controllers	
+
+Worker node
+Runs actual workloads (containers)
+Runs Pods? Yes (app pods run here)
+Components kubelet, kube-proxy, container runtime
+
+What is a Namespace in Kubernetes?
+A Namespace in Kubernetes is a virtual cluster inside a physical Kubernetes cluster. 
+It allows you to divide cluster resources between multiple users, teams, or applications — similar to creating logical partitions.
+
+Command	Description
+(kubectl get ns) 	List all namespaces
+(kubectl create namespace dev)	  Create a new namespace
+(kubectl delete namespace dev) 	Delete a namespace and all its resources
+(kubectl get pods -n dev)  	Get pods in the dev namespace
+(kubectl config set-context --current --namespace=dev)	  Set default namespace for current context
+
 
 
 
