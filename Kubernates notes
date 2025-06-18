@@ -23,3 +23,26 @@ Node Controller: Checks node health.
 ReplicaSet Controller: Ensures the desired number of pod replicas.
 Deployment Controller: Manages updates/rollbacks.
 Job Controller, etc.
+
+Worker Node Components
+kubelet
+Agent running on each node.
+Ensures the containers are running in the pod as expected.
+Talks to the container runtime (e.g. Docker)
+
+kube-proxy
+Maintains networking rules on each node.
+Handles communication between services and pods (load-balancing, routing).
+
+ Container Runtime
+Runs the containers.
+]Examples: Docker, containerd, CRI-O.
+
+ Pods
+Smallest deployable unit in Kubernetes.
+Can contain one or more containers.
+Managed by Deployments, ReplicaSets, StatefulSets, etc.
+
+3 . Explain the concept of Container Orchestration?
+Container orchestration is the automated process of deploying, managing, scaling, networking, and monitoring containers. 
+
