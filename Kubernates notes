@@ -141,6 +141,39 @@ Command	Description
 (kubectl config set-context --current --namespace=dev)	  Set default namespace for current context
 
 
+What advantages does Kubernetes have?
+ 1. Automated Deployment and Scaling
+Auto-scaling: Kubernetes can automatically scale your application up or down based on resource usage (CPU, memory).
+Rolling updates and rollbacks: You can update your applications without downtime and roll back if something goes wrong.
+ 2. High Availability & Self-Healing
+Self-healing: Automatically restarts failed containers, replaces them, and kills those that don't respond to health checks.
+Replication: Ensures specified numbers of pod replicas are always running to avoid single points of failure.
+ 3. Load Balancing and Service Discovery
+Built-in service discovery and load balancing distribute network traffic efficiently across containers.
+Internal DNS and ClusterIP make internal communication seamless.
+4. Efficient Resource Utilization
+Kubernetes schedules containers based on available resources, optimizing CPU and memory usage.
+Supports resource limits and requests for better planning and cost-efficiency.
+ 5. Platform Agnostic
+Runs on any infrastructure: public cloud, private cloud, or on-premises.
+Enables hybrid or multi-cloud deployments without being locked into a specific provider.
+ 6. Strong Security and Configuration Management
+Supports secrets, configMaps, and RBAC (Role-Based Access Control) for secure and flexible configuration.
+Integrates with external tools for logging, monitoring, and security scanning.
+ 7. Declarative Management
+Everything is managed through YAML files (Infrastructure as Code).
+Enables version control and auditable changes in deployments.
+ 8. Ecosystem and Community
+Massive open-source ecosystem (Helm charts, operators, plugins).
+Strong community support and wide adoption across industries.
+
+. Explain the differences between a DaemonSet and a ReplicaSet?
+Replica Set :- On any node, ReplicaSet will make sure that the number of operating pods in the Kubernetes cluster match the number of pods that is planned.
+Replicaset most suitable for applications like web applications which are stateless.
+Daemonset :-Every node will have just the minimum of one pod of the application that we deployed because of DaemonSet.
+Stateful applications are best fits for it.
+
+
 
 
 
