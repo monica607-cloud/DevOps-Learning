@@ -114,6 +114,25 @@ Headless to private pod
 
 pull image from dockerhub
 
+persistance volume 
+create 
+percistance volume place 
+attached 
+
+secretes
+horizontal pod auto scalling
+
+config map
+non sensitive key value config data 
+encode base 64  binary data 
+store in kubernet cluster 
+
+uses 
+app deployment 
+secretes
+login id 
+password 
+
 
 
 
