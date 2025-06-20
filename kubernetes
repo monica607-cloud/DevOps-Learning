@@ -83,6 +83,16 @@ kubectl install
 eksctl  install
 aws config 
 
+eksctl create cluster \
+  --name my-cluster \
+  --region eu-north-1 \
+  --nodegroup-name my-nodes \
+  --node-type t3.medium \
+  --nodes 2 \
+  --nodes-min 1 \
+  --nodes-max 3 \
+  --managed
+
 security credintials - create access key 
 aws s3 ls
 eksctl --version
