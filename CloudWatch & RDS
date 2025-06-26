@@ -3,7 +3,7 @@ Trail Sequence
 Daily Task -> Monitoiring logs
               Create Alerts 
 
-RDS => Collection of data attached to private subnet 
+RDS => Relational database service Collection of data attached to private subnet 
 Types of database :- Relational database
                     NoSQL 
                     Distributed
@@ -11,4 +11,6 @@ Types of database :- Relational database
                     Sequential database
                     non-sequential database 
 Database arrange non-sequential data sequentially 
+
+
 
